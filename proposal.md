@@ -22,7 +22,6 @@ El proyecto consiste en el desarrollo de una plataforma web interactiva diseñad
 
 ### Alcance Mínimo
 
-*Nota*: el siguiente es un ejemplo para un grupo de 3 integrantes para un sistema de hotel. El 
 
 Regularidad:
 |Req|Detalle|
