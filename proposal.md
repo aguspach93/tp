@@ -16,7 +16,7 @@ El proyecto consiste en el desarrollo de una plataforma web interactiva diseñad
 
 ### Modelo
 
-*Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
+*Nota*: 
 
 ## Alcance Funcional 
 
@@ -33,22 +33,16 @@ Regularidad:
 |CUU/Epic|1. Registrar una transaccion de compra de criptomonedas<br>2. Solicitar un alerta de un activo|
 
 
-Adicionales para Aprobación
-|Req|Detalle|
-|:-|:-|
-|CRUD |1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad<br>4. CRUD Provincia<br>5. CRUD Habitación<br>6. CRUD Empleado<br>7. CRUD Cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva<br>3. Realizar el check-out y facturación de estadía y servicios|
-
 
 ### Alcance Adicional Voluntario
 
-Diferenciación de Carteras (Portafolios Múltiples): Permitir al usuario crear un portafolio "Real" y otro "De Prueba" (Simulado/Paper Trading). Esto es genial para testing y suma mucha lógica de negocio al código.
+Diferenciación de Carteras: Permite al usuario administrar un portafolio "Real" y uno "Simulado" (Paper Trading). Esto facilita la validación de estrategias en un entorno de pruebas y aporta robustez a la lógica de negocio.
 
-Manejo de Multidivisas (Dólar/Peso): Como los activos pueden cotizar en dólares (criptos, acciones de afuera) o en pesos (CEDEARs), un dolor de cabeza real es unificar todo. Si sumás una conversión automática basada en el tipo de cambio del día, estéticamente y a nivel lógico es un golazo.
+Gestión Multidivisa: Dado que los activos cotizan en distintas monedas (pesos y dólares), el sistema unificará la valoración de la cartera. Se implementará una conversión automática según el tipo de cambio diario, asegurando consistencia técnica y visual.
 
-Alertas de Precios: Un sistema simple donde el usuario configure: "Avisame si Bitcoin baja de USD 60,000". Puede ser una notificación visual en el dashboard o, si te querés pasar de nivel, un bot de Telegram integrado que mande un mensaje.
+Alertas de Precios: Sistema que permite al usuario configurar umbrales de cotización personalizados. Las notificaciones podrán visualizarse directamente en el panel de control o enviarse de forma automatizada a través de una integración con Telegram.
 
-Exportación de Datos: Un botón para descargar el historial de transacciones en formato CSV o Excel. Es una funcionalidad simple de implementar pero que le da un cierre muy profesional al sistema.
+Exportación de Datos: Funcionalidad para descargar el historial de transacciones en formato CSV o Excel. Su implementación es eficiente y añade un alto nivel de profesionalismo e interoperabilidad al sistema.
 
 
 |Req|Detalle|
